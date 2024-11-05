@@ -1,0 +1,90 @@
+.container{
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 4fr auto;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: white;
+}
+
+.background{
+    background-color: #710523;
+    opacity: 50%;
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 44px;
+    z-index: 11;
+    margin-top: 50px;
+}
+
+.contentContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.view{
+    aspect-ratio: 1 / 1;
+    height: 70vmin;
+}
+
+.canInfoCont{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 80px;
+    z-index: 11;
+}
+
+.wavyCircleWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensures it's behind interactive content */
+    pointer-events: none; /* Prevents interference with clicks or focus */
+    width: 100vmin; /* Scales with viewport but maintains square shape */
+    height: 100vmin;
+  }
+  
+  .wavyCircleWrapper svg {
+    width: 100%;
+    height: 100%;
+}
+
+.arrowBtn{
+    border: 1px solid white;
+    width: 60px;
+    height: 60px;
+    background-color: rgba($color: #ffffff, $alpha: .3);
+    border-radius: 1000px;
+    color: white;
+    cursor: pointer;
+}
+ 
+.canName{
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.price{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
